@@ -9,24 +9,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Login</title>
 
-        <h:outputStylesheet library="css" name="sistema.css"/>
+        <h:outputStylesheet library="css" name="login.css"/>
     </h:head>
     <h:body>
-    	<div id="login-dialog">
-    		<h1>Login</h1>
-    		
-    		<h:form id="frm">
-    			<h:panelGrid columns="2" styleClass="grid-login">
-    				<p:outputLabel value="E-mail" />
-    				<p:inputText size="30" />
-    				
-    				<p:outputLabel value="Senha" />
-    				<p:password size="30" />
-    				
-    				<h:panelGroup/>
-    				<p:commandButton value="Login" />
-    			</h:panelGrid>
-    		</h:form>
-    	</div>
+    
+    	<div class="login-page">
+		  <div class="form">
+		    <h:form class="login-form">
+		      <p:inputText type="text" placeholder="Usuário"/>
+		      <p:inputText type="password" placeholder="Senha"/>
+		      <p:commandButton value="Login" />
+		    </h:form>
+		  </div>
+		</div>
     </h:body>
 </html>
